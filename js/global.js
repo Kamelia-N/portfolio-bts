@@ -227,6 +227,28 @@ const setupProjectCardsVisibility = () => {
   projectCards.forEach(card => observer.observe(card));
 };
 
+const setupContactMailto = () => {
+  const form = document.querySelector('.contact-mail-form');
+  if (!form) return;
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const firstName = form.firstname?.value.trim() || '';
+    const lastName = form.lastname?.value.trim() || '';
+    const email = form.email?.value.trim() || '';
+    const message = form.message?.value.trim() || '';
+    const fullName = [firstName, lastName].filter(Boolean).join(' ');
+
+    const subject = encodeURIComponent(`Message depuis le portfolio - ${fullName || 'Contact'}`);
+    const body = encodeURIComponent(
+      `Nom : ${fullName}\nEmail : ${email}\n\nMessage :\n${message}`
+    );
+
+    window.location.href = `mailto:kamelianessah01@gmail.com?subject=${subject}&body=${body}`;
+  });
+};
+
 const init = () => {
   menuMobile();
   smoothScroll();
@@ -236,6 +258,7 @@ const init = () => {
   setupPortfolioFilters();
   setupProjectDetails();
   setupProjectCardsVisibility();
+  setupContactMailto();
 };
 
 document.addEventListener('DOMContentLoaded', init);
