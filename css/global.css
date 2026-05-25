@@ -3927,3 +3927,103 @@ body.dark-theme .about-goal {
     padding: 3rem 2.2rem;
   }
 }
+
+/* =========================
+   VEILLE DARK MODE FINAL FIX
+========================= */
+
+body.dark-theme .veille,
+body.dark-theme .veille-definition,
+body.dark-theme .veille-presentation,
+body.dark-theme .veille-pipeline,
+body.dark-theme .veille-avantages-limites,
+body.dark-theme .veille-evolution,
+body.dark-theme .veille-rss,
+body.dark-theme .veille-outils,
+body.dark-theme .veille-apport {
+  background: transparent !important;
+  color: #e5e7eb !important;
+}
+
+body.dark-theme .veille .section-header,
+body.dark-theme .veille-definition .section-header,
+body.dark-theme .veille-presentation .section-header,
+body.dark-theme .veille-pipeline .section-header,
+body.dark-theme .veille-avantages-limites .section-header,
+body.dark-theme .veille-evolution .section-header,
+body.dark-theme .veille-rss .section-header,
+body.dark-theme .veille-outils .section-header,
+body.dark-theme .veille-apport .section-header,
+body.dark-theme .veille-focus__item,
+body.dark-theme .pipeline-step,
+body.dark-theme .timeline-content,
+body.dark-theme .veille-tools-list li,
+body.dark-theme .devops-balance__box {
+  background: #111827 !important;
+  color: #e5e7eb !important;
+  border-color: rgba(148, 163, 184, 0.24) !important;
+}
+
+body.dark-theme .veille h2,
+body.dark-theme .veille h3,
+body.dark-theme .veille h4,
+body.dark-theme .veille-definition h2,
+body.dark-theme .veille-definition h3,
+body.dark-theme .veille-presentation h2,
+body.dark-theme .veille-presentation h3,
+body.dark-theme .veille-pipeline h2,
+body.dark-theme .veille-pipeline h3,
+body.dark-theme .veille-avantages-limites h2,
+body.dark-theme .veille-avantages-limites h3,
+body.dark-theme .veille-evolution h2,
+body.dark-theme .veille-evolution h3,
+body.dark-theme .veille-rss h2,
+body.dark-theme .veille-outils h2,
+body.dark-theme .veille-apport h2,
+body.dark-theme .timeline-content h3,
+body.dark-theme .devops-balance__box h3 {
+  color: #f8fafc !important;
+}
+
+body.dark-theme .veille p,
+body.dark-theme .veille li,
+body.dark-theme .veille-definition p,
+body.dark-theme .veille-definition li,
+body.dark-theme .veille-presentation p,
+body.dark-theme .veille-presentation li,
+body.dark-theme .veille-pipeline p,
+body.dark-theme .veille-pipeline li,
+body.dark-theme .veille-avantages-limites p,
+body.dark-theme .veille-avantages-limites li,
+body.dark-theme .veille-evolution p,
+body.dark-theme .veille-evolution li,
+body.dark-theme .veille-rss p,
+body.dark-theme .veille-outils p,
+body.dark-theme .veille-outils li,
+body.dark-theme .veille-apport p,
+body.dark-theme .timeline-content p,
+body.dark-theme .pipeline-step p,
+body.dark-theme .veille-focus__item p,
+body.dark-theme .veille-focus__item li,
+body.dark-theme .devops-balance__box li {
+  color: #cbd5e1 !important;
+}
+
+body.dark-theme .timeline-date,
+body.dark-theme .veille-tools-list strong,
+body.dark-theme .veille-pro__kicker {
+  color: #93c5fd !important;
+}
+
+body.dark-theme .pipeline-step span {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .timeline-content .tag,
+body.dark-theme .veille-pro__tags .tag,
+body.dark-theme .veille .tag {
+  background: rgba(96, 165, 250, 0.18) !important;
+  color: #dbeafe !important;
+  border: 1px solid rgba(147, 197, 253, 0.38) !important;
+}
