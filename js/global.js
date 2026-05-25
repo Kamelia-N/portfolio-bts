@@ -227,49 +227,6 @@ const setupProjectCardsVisibility = () => {
   projectCards.forEach(card => observer.observe(card));
 };
 
-const setupMouseGlow = () => {
-  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (!canHover || reduceMotion) return;
-
-  const glow = document.createElement('div');
-  glow.className = 'mouse-glow';
-  glow.setAttribute('aria-hidden', 'true');
-  document.body.appendChild(glow);
-
-  let targetX = window.innerWidth / 2;
-  let targetY = window.innerHeight / 2;
-  let currentX = targetX;
-  let currentY = targetY;
-  let isVisible = false;
-
-  const animate = () => {
-    currentX += (targetX - currentX) * 0.16;
-    currentY += (targetY - currentY) * 0.16;
-
-    glow.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%)`;
-    requestAnimationFrame(animate);
-  };
-
-  document.addEventListener('mousemove', event => {
-    targetX = event.clientX;
-    targetY = event.clientY;
-
-    if (!isVisible) {
-      glow.classList.add('is-visible');
-      isVisible = true;
-    }
-  });
-
-  document.addEventListener('mouseleave', () => {
-    glow.classList.remove('is-visible');
-    isVisible = false;
-  });
-
-  animate();
-};
-
 const init = () => {
   menuMobile();
   smoothScroll();
@@ -279,7 +236,6 @@ const init = () => {
   setupPortfolioFilters();
   setupProjectDetails();
   setupProjectCardsVisibility();
-  setupMouseGlow();
 };
 
 document.addEventListener('DOMContentLoaded', init);
