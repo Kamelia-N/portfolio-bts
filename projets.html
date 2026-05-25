@@ -1,0 +1,885 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projets - Kamelia Nessah</title>
+  <meta name="description" content="Projets réalisés par Kamelia Nessah dans le cadre du BTS SIO SLAM">
+
+  <link rel="shortcut icon" href="./img/favicon.ico?v=1" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <script src="./js/global.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container d-flex">
+      <div class="logo">
+        Kamelia Nessah
+      </div>
+      <nav class="navbar ">
+        <ul class="menu list-unstyled">
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="bts-sio.html">BTS SIO</a></li>
+         <!--<li><a href="#about">A propos</a></li> -->
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li> 
+          <li><a href="veille.html">Veille technologique</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right header-actions">
+        <button class="theme-toggle" type="button" aria-label="Passer en mode sombre">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="projets" class="projets">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 class="section-title">Projets</h2>
+          <p>
+            Voici une sélection de mes projets réalisés dans le cadre de ma formation en BTS SIO SLAM,
+            incluant des développements web, des bases de données et des applications métiers.
+          </p>
+        </div>
+
+        <ul class="grid portfolio-filters list-unstyled">
+          <li class="grid__item">
+            <a href="#" class="active" data-filter="all">Tous les projets</a>
+          </li>
+          <li class="grid__item">
+            <a href="#" data-filter="web">Développement web</a>
+          </li>
+          <li class="grid__item">
+            <a href="#" data-filter="app">Applications</a>
+          </li>
+          <li class="grid__item">
+            <a href="#" data-filter="vm">Projets VM</a>
+          </li>
+          <li class="grid__item">
+            <a href="#" data-filter="veille">Veille technique</a>
+          </li>
+        </ul>
+
+        <div class="grid">
+
+          <!-- Projet 1 : Bibliothèque Java -->
+          <div class="grid__item">
+            <div class="card" data-category="app">
+              <img src="./img/biblio.jpg" loading="lazy" width="365" height="243" alt="Application bibliothèque Java"
+                class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">AP2 Bibliothèque</h3>
+                <p class="category">Application</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-2">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-2">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/écran biblio.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Écran d'accueil de l'application Bibliothèque">
+                      <img src="./img/auteur biblio.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Gestion des auteurs dans l'application Bibliothèque">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Application de gestion de bibliothèque en Java</h4>
+
+                      <p><i>Année : 2025/2026</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Ce projet PPE1 est une application desktop développée en Java pour gérer une bibliothèque.
+                        L'application propose une interface graphique Java Swing permettant de gérer les auteurs,
+                        les livres, les emprunteurs et les emprunts depuis plusieurs écrans dédiés.
+                      </p>
+
+                      <p>
+                        Le projet utilise une architecture organisée en MVC avec des classes Controller, DAO,
+                        Model et View. Les données sont stockées dans une base SQLite, ce qui permet d'ajouter,
+                        consulter, modifier, supprimer et rechercher les informations de la bibliothèque.
+                      </p>
+
+                      <h5 class="h3">Fonctionnalités</h5>
+                      <ul>
+                        <li>Gestion des auteurs : ajout, affichage, modification, suppression et recherche</li>
+                        <li>Gestion des livres avec titre, langue, ISBN, année, pages, dates et auteur associé</li>
+                        <li>Gestion des emprunteurs</li>
+                        <li>Gestion des emprunts avec dates de retour et statut</li>
+                        <li>Interface graphique Java Swing avec plusieurs fenêtres</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>Java</li>
+                        <li>Java Swing</li>
+                        <li>SQLite</li>
+                        <li>JDBC</li>
+                        <li>Architecture MVC</li>
+                        <li>DAO</li>
+                        <li>NetBeans</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Conception d'une application Java avec interface graphique</li>
+                        <li>Organisation du code en couches MVC</li>
+                        <li>Connexion à une base de données avec JDBC</li>
+                        <li>Création de requêtes SQL pour le CRUD et la recherche</li>
+                        <li>Manipulation des modèles Auteur, Livre, Emprunteur et Emprunt</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/bibliotheque-java-ppe1.git" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                        <a href="./docs/ppe1_final_organized.pdf" target="_blank" class="btn">
+                          Consulter la fiche du projet
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 : ATC Services -->
+          <div class="grid__item">
+            <div class="card" data-category="web">
+              <img src="./img/atc-service.png" loading="lazy" width="365" height="243"
+                alt="Site web ATC Services" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">ATC Services</h3>
+                <p class="category">Site web</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-3">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-3">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/nos vehicules.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Véhicules ATC Services">
+                      <img src="./img/réservation.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Réservation ATC Services">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">ATC Services — site web de réservation</h4>
+
+                      <p><i>Année : 2025/2026</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        ATC Services est un site web développé en PHP, HTML et CSS autour d'un service
+                        de réservation de transport. Il permet aux utilisateurs de consulter les véhicules
+                        disponibles, de se connecter et d'effectuer une réservation.
+                      </p>
+
+                      <p>
+                        Une interface administrateur permet de gérer les disponibilités, les informations
+                        associées aux véhicules et le suivi des réservations.
+                      </p>
+
+                      <h5 class="h3">Fonctionnalités</h5>
+                      <ul>
+                        <li>Authentification des utilisateurs</li>
+                        <li>Gestion des rôles</li>
+                        <li>Affichage des véhicules disponibles</li>
+                        <li>Création d’une réservation</li>
+                        <li>Interface administrateur</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/ATC_services_AP2.git" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                        <a href="./docs/ppe2_final_organized.pdf" target="_blank" class="btn">
+                          Consulter la fiche du projet
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 : Site vitrine optique -->
+          <div class="grid__item">
+            <div class="card" data-category="web">
+              <img src="./img/Stand_lunettes.png" loading="lazy" width="365" height="243"
+                alt="Site web d'un magasin optique" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">Site web d'un magasin optique</h3>
+                <p class="category">Développement web</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-1">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-1">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/Lentille.jpg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Lentilles optiques">
+                      <img src="./img/Optique.jpg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Magasin optique">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Site vitrine pour un magasin d’optique</h4>
+
+                      <p><i>Année : 2024</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Dans le cadre de ma formation BTS SIO option SLAM, j’ai conçu et développé
+                        un site vitrine pour un magasin d’optique. Ce site a pour objectif de présenter
+                        les produits et services proposés par le magasin tout en facilitant la prise de contact
+                        avec les clients.
+                      </p>
+
+                      <p>
+                        Le site contient une page d’accueil, une galerie de modèles de lunettes,
+                        une page dédiée aux services et un formulaire de contact.
+                      </p>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/Wave-optique.git" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                      </div>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Création d’une interface responsive</li>
+                        <li>Structuration d’une page web</li>
+                        <li>Mise en forme avec CSS</li>
+                        <li>Ajout d’interactions avec JavaScript</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4 : PhoneBook -->
+          <div class="grid__item">
+            <div class="card" data-category="app">
+              <img src="img\phonebook-couverture.png" loading="lazy" width="365" height="243"
+                alt="Application PhoneBook en Java" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">PhoneBook</h3>
+                <p class="category">Java — Application console</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-5">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-5">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="img\phonebook.jpg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Exécution du projet PhoneBook dans la console IntelliJ">
+
+                      <img src="img\phonebooktxt.jpg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Fichier texte généré par le projet PhoneBook">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Projet PhoneBook en Java</h4>
+
+                      <p><i>Année : 2025</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        PhoneBook est une application console développée en Java permettant d’ajouter
+                        des contacts dans un annuaire téléphonique. L’utilisateur saisit un nom, un prénom
+                        et un numéro de téléphone. Les informations sont ensuite enregistrées automatiquement
+                        dans un fichier texte.
+                      </p>
+
+                      <h5 class="h3">Objectif du projet</h5>
+                      <p>
+                        L’objectif de ce projet était de mettre en pratique les bases de la programmation
+                        orientée objet en Java, la saisie utilisateur, la manipulation de fichiers et la gestion
+                        des exceptions.
+                      </p>
+
+                      <h5 class="h3">Fonctionnalités</h5>
+                      <ul>
+                        <li>Saisie du nom, du prénom et du numéro de téléphone.</li>
+                        <li>Création d’un objet Contact à partir des données saisies.</li>
+                        <li>Création automatique du fichier phonebook.txt s’il n’existe pas.</li>
+                        <li>Ajout du contact dans le fichier sans supprimer les anciens contacts.</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>Java</li>
+                        <li>Maven</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>Programmation orientée objet</li>
+                        <li>File, FileWriter et BufferedWriter</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/phoneBook.git" target="_blank" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                      </div>
+
+                      <h5 class="h3">Compétences travaillées</h5>
+                      <ul>
+                        <li>Création de classes Java.</li>
+                        <li>Utilisation d’attributs, constructeurs, getters et setters.</li>
+                        <li>Saisie utilisateur avec Scanner.</li>
+                        <li>Manipulation de fichiers texte.</li>
+                        <li>Gestion des exceptions avec try/catch.</li>
+                      </ul>
+
+                      <h5 class="h3">Améliorations possibles</h5>
+                      <ul>
+                        <li>Ajouter la recherche, la modification et la suppression d’un contact.</li>
+                        <li>Vérifier le format du numéro de téléphone.</li>
+                        <li>Ajouter une interface graphique avec Java Swing ou JavaFX.</li>
+                        <li>Stocker les contacts dans une base de données.</li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 5 : Calculatrice Java -->
+          <div class="grid__item">
+            <div class="card" data-category="app">
+              <img src="./img/calculatrice-java.svg" loading="lazy" width="365" height="243"
+                alt="Projet calculatrice Java" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">Calculatrice Java</h3>
+                <p class="category">Java - Application console</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-8">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-8">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/calculatrice-java.svg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Illustration calculatrice Java">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Calculatrice en Java</h4>
+
+                      <p><i>Année : 2024/2025</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Ce projet est une calculatrice développée en Java sous forme d'application console.
+                        Elle permet à l'utilisateur de saisir deux nombres, de choisir une opération
+                        puis d'obtenir le résultat directement dans le terminal.
+                      </p>
+
+                      <p>
+                        Ce travail m'a permis de pratiquer les bases de Java : lecture des entrées utilisateur,
+                        conditions, méthodes, boucles et gestion des erreurs simples comme la division par zéro.
+                      </p>
+
+                      <h5 class="h3">Fonctionnalités</h5>
+                      <ul>
+                        <li>Addition, soustraction, multiplication et division</li>
+                        <li>Saisie interactive avec Scanner</li>
+                        <li>Vérification des valeurs saisies</li>
+                        <li>Gestion de la division par zéro</li>
+                        <li>Possibilité d'enchaîner plusieurs calculs</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>Java</li>
+                        <li>JDK</li>
+                        <li>Programmation orientée objet</li>
+                        <li>Git et GitHub</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Création d'un projet Java simple</li>
+                        <li>Utilisation des variables et des conditions</li>
+                        <li>Organisation du code avec des méthodes</li>
+                        <li>Compilation et exécution avec javac et java</li>
+                        <li>Mise en ligne du projet sur GitHub</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/calulatriceJAVA.git" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 6 : To-Do List -->
+          <div class="grid__item">
+            <div class="card" data-category="web">
+              <img src="./img/to-do-list.png" loading="lazy" width="365" height="243" alt="Application To-Do List"
+                class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">To-Do List</h3>
+                <p class="category">Développement web</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-4">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-4">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/to-do-list rempli.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Interface To-Do List">
+                      <img src="./img/script to-do.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Script To-Do List">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Application To-Do List</h4>
+
+                      <p><i>Année : 2025</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Cette application web permet de gérer une liste de tâches de manière simple
+                        et interactive. Elle a été développée afin de mettre en pratique les bases
+                        du développement web et la manipulation du DOM avec JavaScript.
+                      </p>
+
+                      <h5 class="h3">Fonctionnalités</h5>
+                      <ul>
+                        <li>Ajout de nouvelles tâches</li>
+                        <li>Suppression de tâches</li>
+                        <li>Marquage des tâches comme terminées</li>
+                        <li>Mise à jour dynamique de l’interface</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies utilisées</h5>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Manipulation du DOM</li>
+                        <li>Gestion des événements utilisateur</li>
+                        <li>Développement d’une application interactive</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://github.com/Kamelia-N/To-Do-List-js.git" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir sur GitHub
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 7 : Kali Linux -->
+          <div class="grid__item">
+            <div class="card" data-category="vm">
+              <img src="./img/kali-linux-vm.svg" loading="lazy" width="365" height="243"
+                alt="Projet Kali Linux et cybersécurité" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">Kali Linux</h3>
+                <p class="category">Cybersécurité - Virtualisation</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-9">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-9">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/kali-linux-vm.svg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Illustration Kali Linux en machine virtuelle">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Installation et configuration de Kali Linux</h4>
+
+                      <p><i>Année : 2024/2025</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Ce projet consiste à installer et configurer une machine virtuelle Kali Linux sur mon PC,
+                        d'abord avec VirtualBox puis avec VMware Workstation. Kali Linux est une distribution
+                        spécialisée dans les tests de pénétration et la sécurité informatique, très utilisée
+                        dans le domaine de la cybersécurité.
+                      </p>
+
+                      <p>
+                        Cette installation m'a permis de me familiariser avec les environnements virtuels,
+                        la configuration d'une VM et les outils de sécurité informatique utilisés pour l'analyse,
+                        les tests d'intrusion et la sécurisation d'un système.
+                      </p>
+
+                      <h5 class="h3">Objectifs du projet</h5>
+                      <ul>
+                        <li>Installer Kali Linux dans une machine virtuelle</li>
+                        <li>Configurer l'environnement avec VirtualBox puis VMware Workstation</li>
+                        <li>Découvrir les outils de base liés à la cybersécurité</li>
+                        <li>Comprendre l'intérêt de la virtualisation pour tester sans impacter le système principal</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies et outils utilisés</h5>
+                      <ul>
+                        <li>Kali Linux</li>
+                        <li>VirtualBox</li>
+                        <li>VMware Workstation</li>
+                        <li>Machine virtuelle</li>
+                        <li>Outils de sécurité informatique</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Installation et configuration d'un système Linux</li>
+                        <li>Création et paramétrage d'une machine virtuelle</li>
+                        <li>Découverte des environnements de tests de pénétration</li>
+                        <li>Premiers apprentissages en analyse et sécurisation informatique</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir la documentation suivie
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 8 : Ubuntu -->
+          <div class="grid__item">
+            <div class="card" data-category="vm">
+              <img src="./img/ubuntu-vm.svg" loading="lazy" width="365" height="243"
+                alt="Projet Ubuntu sur VMware Workstation" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">Ubuntu</h3>
+                <p class="category">Linux - Virtualisation</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-10">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-10">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/ubuntu-vm.svg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Illustration Ubuntu sur VMware Workstation">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Installation d'Ubuntu sur VMware Workstation</h4>
+
+                      <p><i>Année : 2024/2025</i></p>
+
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Ce projet scolaire consiste a installer une machine virtuelle Ubuntu sur VMware Workstation
+                        afin de decouvrir un environnement Linux et de mieux comprendre les etapes d installation
+                        d un systeme d exploitation dans une machine virtuelle.
+                      </p>
+
+                      <p>
+                        Il m a aussi permis d apprendre et de pratiquer les commandes de base d Ubuntu,
+                        notamment la navigation dans les dossiers, la gestion des fichiers et l utilisation
+                        du terminal pour effectuer des actions simples en ligne de commande.
+                      </p>
+                      <h5 class="h3">Objectifs du projet</h5>
+                      <ul>
+                        <li>Installer Ubuntu Desktop dans une machine virtuelle</li>
+                        <li>Configurer VMware Workstation pour installer Ubuntu correctement</li>
+                        <li>Apprendre les commandes de base du terminal Ubuntu</li>
+                        <li>Comprendre le fonctionnement d un environnement Linux</li>
+                      </ul>
+
+                      <h5 class="h3">Technologies et outils utilisés</h5>
+                      <ul>
+                        <li>Ubuntu Desktop</li>
+                        <li>VMware Workstation</li>
+                        <li>Machine virtuelle</li>
+                        <li>Environnement Linux</li>
+                        <li>Terminal Ubuntu</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Installation et configuration d'un système Ubuntu</li>
+                        <li>Utilisation d'un environnement Linux pour le développement</li>
+                        <li>Gestion d'une machine virtuelle avec VMware Workstation</li>
+                        <li>Comprehension des bases d un systeme Linux</li>
+                      </ul>
+
+                      <div class="project-links">
+                        <a href="https://davycx10.github.io/portfolio-dave.github.io/doc/Installation%20d%E2%80%99Ubuntu%20Desktop%20sur%20VMware%20Workstation%20Pro%2017.pdf" target="_blank" rel="noopener" class="btn btn-outline">
+                          Voir la documentation suivie
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 9 : Veille technologique -->
+          <div class="grid__item">
+            <div class="card" data-category="veille">
+              <img src="./img/images devops.jpg" loading="lazy" width="365" height="243"
+                alt="Veille technologique DevOps" class="card__image">
+
+              <div class="card__inner">
+                <h3 class="card__title">Veille technologique</h3>
+                <p class="category">Veille technique</p>
+              </div>
+
+              <div class="card__overlay">
+                <a href="#" class="card__link" data-id="modal-7">+</a>
+              </div>
+            </div>
+
+            <div class="modal" id="modal-7">
+              <button class="modal__close">&times;</button>
+
+              <div class="modal__content">
+                <div class="container">
+                  <div class="grid">
+
+                    <div class="grid__item">
+                      <img src="./img/images devops.jpg" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Capture Veille DevOps">
+                      <img src="./img/DevOps-part-dev-part-ops_fr.png" loading="lazy" width="560" height="373" class="card__image"
+                        alt="Illustration DevOps développement et exploitation">
+                    </div>
+
+                    <div class="grid__item">
+                      <h4 class="modal__title h2">Veille technologique DevOps</h4>
+
+                      <p><i>Année : 2025/2026</i></p>
+                      <p class="category">Description du projet</p>
+
+                      <p>
+                        Cette fiche présente une veille sur les pratiques DevOps, l’intégration continue,
+                        l’automatisation des déploiements et la collaboration entre développement et exploitation.
+                      </p>
+
+                      <p>
+                        Le projet met en évidence l’importance des outils d’orchestration, des pipelines CI/CD
+                        et de la surveillance pour livrer des applications plus rapidement et de manière plus fiable.
+                      </p>
+
+                      <h5 class="h3">Technologies et domaines</h5>
+                      <ul>
+                        <li>Docker / conteneurs</li>
+                        <li>CI/CD</li>
+                        <li>Monitoring et automatisation</li>
+                        <li>Cloud / infrastructures</li>
+                      </ul>
+
+                      <h5 class="h3">Compétences développées</h5>
+                      <ul>
+                        <li>Analyse des flux de déploiement</li>
+                        <li>Compréhension des bonnes pratiques DevOps</li>
+                        <li>Veille technologique et synthèse</li>
+                        <li>Préparation à des environnements professionnels modernes</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="grid">
+        <div class="grid__item">
+          <p>Kamelia Nessah</p>
+        </div>
+        <div class="grid__item">
+          <ul class="socials list-unstyled">
+            <!-- LinkedIn -->
+            <li>
+              <a href="https://www.linkedin.com/in/kamelia-nessah" target="_blank">
+                <svg class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="https://github.com/Kamelia-N" target="_blank">
+                <svg class="icon github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <path fill="currentColor"
+                    d="M165.9 397.4c0 2-2.3 3.7-5.2 3.7-3 0-5.2-1.7-5.2-3.7 0-2.1 2.3-3.7 5.2-3.7 2.9-.1 5.2 1.6 5.2 3.7zm-32.5-10.7c-.7 2 1.4 4.1 4.6 4.8 3.1.7 6.2-.4 6.9-2.4.7-2-1.4-4.1-4.6-4.8-3.1-.7-6.2.4-6.9 2.4zM244 8C106.1 8 0 113.3 0 252c0 110.9 71.8 204.9 171.7 238.1 12.5 2.3 17.1-5.4 17.1-12 0-5.9-.2-25.4-.3-46-69.9 15.2-84.7-30-84.7-30-11.4-29-27.8-36.7-27.8-36.7-22.7-15.6 1.7-15.3 1.7-15.3 25.1 1.8 38.3 26 38.3 26 22.3 38.2 58.6 27.2 72.9 20.8 2.3-16.1 8.7-27.2 15.8-33.5-55.8-6.3-114.5-27.9-114.5-124.3 0-27.5 9.8-50 25.8-67.6-2.6-6.3-11.2-31.8 2.4-66.2 0 0 21-6.7 68.8 25.8a236.4 236.4 0 0 1 125.2 0c47.8-32.5 68.8-25.8 68.8-25.8 13.6 34.4 5 59.9 2.4 66.2 16 17.6 25.8 40.1 25.8 67.6 0 96.7-58.8 118-114.8 124.2 8.9 7.7 16.8 22.9 16.8 46.1 0 33.3-.3 60.1-.3 68.3 0 6.6 4.5 14.4 17.2 12C424.2 456.8 496 362.8 496 252 496 113.3 389.9 8 244 8z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="grid__item">
+          <p>Copyright © 2026. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

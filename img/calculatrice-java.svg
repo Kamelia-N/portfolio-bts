@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Calculatrice Java</title>
+  <desc id="desc">Illustration moderne d'une calculatrice Java avec terminal et opérations mathématiques.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="0.58" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#0f172a" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1000" cy="150" r="130" fill="#bfdbfe" opacity=".55"/>
+  <circle cx="160" cy="670" r="160" fill="#93c5fd" opacity=".28"/>
+  <g filter="url(#shadow)">
+    <rect x="130" y="145" width="940" height="555" rx="34" fill="white"/>
+    <rect x="130" y="145" width="940" height="86" rx="34" fill="#0f172a"/>
+    <circle cx="180" cy="188" r="13" fill="#ef4444"/>
+    <circle cx="220" cy="188" r="13" fill="#f59e0b"/>
+    <circle cx="260" cy="188" r="13" fill="#22c55e"/>
+    <text x="910" y="194" fill="#cbd5e1" font-family="Consolas, monospace" font-size="22">JavaCalculator.java</text>
+    <rect x="185" y="285" width="395" height="345" rx="24" fill="#f8fafc" stroke="#dbeafe" stroke-width="4"/>
+    <rect x="220" y="320" width="325" height="70" rx="16" fill="#111827"/>
+    <text x="246" y="366" fill="#38bdf8" font-family="Consolas, monospace" font-size="30">15 + 7 = 22</text>
+    <g fill="#e2e8f0">
+      <rect x="225" y="425" width="62" height="52" rx="12"/>
+      <rect x="310" y="425" width="62" height="52" rx="12"/>
+      <rect x="395" y="425" width="62" height="52" rx="12"/>
+      <rect x="480" y="425" width="62" height="52" rx="12"/>
+      <rect x="225" y="500" width="62" height="52" rx="12"/>
+      <rect x="310" y="500" width="62" height="52" rx="12"/>
+      <rect x="395" y="500" width="62" height="52" rx="12"/>
+      <rect x="480" y="500" width="62" height="52" rx="12"/>
+      <rect x="225" y="575" width="147" height="52" rx="12"/>
+      <rect x="395" y="575" width="62" height="52" rx="12"/>
+      <rect x="480" y="575" width="62" height="52" rx="12"/>
+    </g>
+    <g fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">
+      <text x="256" y="459">7</text><text x="341" y="459">8</text><text x="426" y="459">9</text><text x="511" y="459">+</text>
+      <text x="256" y="534">4</text><text x="341" y="534">5</text><text x="426" y="534">6</text><text x="511" y="534">-</text>
+      <text x="299" y="609">0</text><text x="426" y="609">=</text><text x="511" y="609">÷</text>
+    </g>
+    <rect x="635" y="285" width="360" height="345" rx="24" fill="url(#panel)"/>
+    <text x="680" y="348" fill="#22c55e" font-family="Consolas, monospace" font-size="26">$ java Main</text>
+    <text x="680" y="404" fill="#e2e8f0" font-family="Consolas, monospace" font-size="24">Nombre 1 : 15</text>
+    <text x="680" y="456" fill="#e2e8f0" font-family="Consolas, monospace" font-size="24">Operation : +</text>
+    <text x="680" y="508" fill="#e2e8f0" font-family="Consolas, monospace" font-size="24">Nombre 2 : 7</text>
+    <text x="680" y="575" fill="#38bdf8" font-family="Consolas, monospace" font-size="30">Resultat : 22</text>
+  </g>
+</svg>

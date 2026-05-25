@@ -5,20 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message envoyé - Kamelia Nessah</title>
-  <meta name="description" content="Confirmation d'envoi du formulaire de contact">
+
+  <title>Contact - Kamelia Nessah</title>
+  <meta name="description" content="Page de contact du portfolio de Kamelia Nessah">
 
   <link rel="shortcut icon" href="./img/favicon.ico?v=1" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/global.css">
+
   <script src="./js/global.js" defer></script>
 </head>
 
 <body>
 
-<header class="header">
+  <header class="header">
     <div class="container d-flex">
       <div class="logo">
         Kamelia Nessah
@@ -44,25 +48,49 @@
   </header>
 
   <main>
-    <section class="thanks-section">
+
+    <section id="contact" class="contact">
       <div class="container">
-        <div class="thanks-card">
-          <div class="thanks-icon">✓</div>
-          <p class="thanks-kicker">Formulaire envoyé</p>
-          <h1>Merci pour votre message</h1>
+
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
           <p>
-            Votre demande a bien été transmise. Je vous répondrai dès que possible avec les informations nécessaires.
+            Si vous souhaitez échanger à propos de mes projets, de mes compétences
+            ou d’une opportunité dans le domaine du développement informatique,
+            vous pouvez me contacter via ce formulaire.
           </p>
-          <div class="thanks-actions">
-            <a href="index.html#hero" class="btn">Retour à l'accueil</a>
-            <a href="projets.html" class="btn btn-outline">Voir mes projets</a>
-          </div>
         </div>
+
+        <form action="https://formsubmit.co/kamelianessah01@gmail.com" method="POST" class="form">
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://kamelia-n.github.io/portfolio-bts/thanks.html">
+
+          <label for="firstname">
+            <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
+          </label>
+
+          <label for="lastname">
+            <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+          </label>
+
+          <label for="email">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </label>
+
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+
+          <input type="submit" class="btn" value="Envoyer">
+
+        </form>
+
       </div>
     </section>
+
   </main>
 
-<footer>
+  <footer>
     <div class="container">
       <div class="grid">
         <div class="grid__item">

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Veille technologique - Kamelia Nessah</title>
+
+  <link rel="shortcut icon" href="./img/favicon.ico?v=1" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <script src="./js/global.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container d-flex">
+      <div class="logo">
+        Kamelia Nessah
+      </div>
+      <nav class="navbar ">
+        <ul class="menu list-unstyled">
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="bts-sio.html">BTS SIO</a></li>
+         <!--<li><a href="#about">A propos</a></li> -->
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="competences.html">Compétences</a></li> 
+          <li><a href="veille.html">Veille technologique</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right header-actions">
+        <button class="theme-toggle" type="button" aria-label="Passer en mode sombre">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Introduction -->
+    <section id="veille" class="veille">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Veille technologique — DevOps</h2>
+          <p>
+            Je réalise une veille technologique sur le DevOps afin de comprendre les pratiques
+            qui permettent d'améliorer la qualité, la sécurité et la rapidité des déploiements logiciels.
+          </p>
+          <p>
+            Cette veille m'a permis de mieux comprendre les méthodes utilisées dans les environnements
+            professionnels pour automatiser, tester et sécuriser les livraisons applicatives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Définition -->
+    <section class="veille-definition">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Qu'est-ce que le DevOps ?</h2>
+          <p>
+            Le DevOps est une approche qui vise à rapprocher les équipes de développement
+            et les équipes d'exploitation. L'objectif est de livrer des applications plus rapidement,
+            plus régulièrement et avec moins d'erreurs.
+          </p>
+          <p>
+            Cette démarche repose sur plusieurs pratiques : l'intégration continue, le déploiement
+            continu, l'automatisation des tests, la supervision des applications et la collaboration
+            entre les équipes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi ce sujet -->
+    <section class="veille-presentation">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Pourquoi ce sujet ?</h2>
+          <p>
+            J'ai choisi le DevOps car il est directement lié aux pratiques actuelles du développement
+            logiciel : automatisation, tests, intégration continue, déploiement continu et collaboration
+            entre les équipes.
+          </p>
+          <p>
+            Ce sujet est aussi en lien avec mon alternance. Je travaille sur Salesforce et je découvre
+            les déploiements entre plusieurs environnements, notamment avec Copado :
+            développement, recette puis production.
+          </p>
+        </div>
+
+        <div class="veille-focus">
+          <div class="veille-focus__item">
+            <h3>Axes de veille</h3>
+            <ul>
+              <li>CI/CD : GitHub Actions, GitLab CI</li>
+              <li>Docker et conteneurisation</li>
+              <li>Kubernetes et orchestration</li>
+              <li>Jenkins et automatisation des pipelines</li>
+              <li>DevSecOps et sécurité des déploiements</li>
+            </ul>
+          </div>
+
+          <div class="veille-focus__item">
+            <h3>Lien avec mon alternance</h3>
+            <p>
+              Les notions DevOps me permettent de mieux comprendre les déploiements multi-environnements,
+              la fiabilisation des livraisons et les bonnes pratiques utilisées en entreprise.
+              Dans mon alternance, cela rejoint les déploiements Salesforce avec Copado.
+            </p>
+
+            <div class="veille-pro__icons">
+              <i class="devicon-githubactions-plain colored" title="GitHub Actions"></i>
+              <i class="devicon-gitlab-plain colored" title="GitLab CI"></i>
+              <i class="devicon-docker-plain colored" title="Docker"></i>
+              <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
+              <i class="devicon-jenkins-plain colored" title="Jenkins"></i>
+              <i class="devicon-linux-plain colored" title="Linux"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fonctionnement pipeline -->
+    <section class="veille-pipeline">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Fonctionnement d'un pipeline DevOps</h2>
+          <p>
+            Un pipeline DevOps automatise les étapes entre l'écriture du code et sa mise en production.
+            Il permet de réduire les erreurs humaines et de rendre les livraisons plus fiables.
+          </p>
+        </div>
+
+        <div class="pipeline-steps">
+
+          <div class="pipeline-step">
+            <span>1</span>
+            <h3>Code</h3>
+            <p>
+              Le développeur modifie le code et l'envoie sur un dépôt Git.
+            </p>
+          </div>
+
+          <div class="pipeline-step">
+            <span>2</span>
+            <h3>Tests</h3>
+            <p>
+              Des tests automatiques vérifient que les changements ne cassent pas l'application.
+            </p>
+          </div>
+
+          <div class="pipeline-step">
+            <span>3</span>
+            <h3>Build</h3>
+            <p>
+              L'application est préparée : compilation, packaging ou création d'une image Docker.
+            </p>
+          </div>
+
+          <div class="pipeline-step">
+            <span>4</span>
+            <h3>Déploiement</h3>
+            <p>
+              Le projet est déployé sur les environnements Dev, Recette puis Production.
+            </p>
+          </div>
+
+          <div class="pipeline-step">
+            <span>5</span>
+            <h3>Supervision</h3>
+            <p>
+              Les logs, alertes et métriques permettent de surveiller l'application après livraison.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<!-- Apports et limites -->
+<section class="veille-avantages-limites">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Apports et limites du DevOps</h2>
+      <p>
+        Le DevOps améliore la qualité et la rapidité des livraisons, mais sa mise en place
+        ne repose pas uniquement sur des outils. Elle demande aussi une organisation adaptée,
+        de l'automatisation fiable et une bonne collaboration entre les équipes.
+      </p>
+    </div>
+
+    <div class="devops-balance">
+
+      <div class="devops-balance__box devops-balance__box--plus">
+        <div class="devops-balance__icon">✓</div>
+        <h3>Apports</h3>
+
+        <ul>
+          <li>Livraisons plus rapides et plus régulières.</li>
+          <li>Réduction des erreurs grâce aux tests automatisés.</li>
+          <li>Meilleure collaboration entre les équipes Dev et Ops.</li>
+          <li>Détection plus rapide des problèmes grâce aux logs et à la supervision.</li>
+          <li>Déploiements plus fiables entre Dev, Recette et Production.</li>
+        </ul>
+      </div>
+
+      <div class="devops-balance__box devops-balance__box--warning">
+        <div class="devops-balance__icon">!</div>
+        <h3>Limites</h3>
+
+        <ul>
+          <li>Mise en place parfois complexe dans une organisation existante.</li>
+          <li>Nécessite des compétences sur plusieurs outils DevOps.</li>
+          <li>Un pipeline mal configuré peut propager rapidement une erreur.</li>
+          <li>Les automatisations doivent être maintenues régulièrement.</li>
+          <li>Le DevOps dépend aussi de la communication entre les équipes.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Évolution du DevOps -->
+    <section class="veille-evolution">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Évolution du DevOps</h2>
+          <p>
+            Le DevOps a évolué avec les besoins des entreprises : livrer plus rapidement,
+            réduire les erreurs, automatiser les tâches répétitives et sécuriser les déploiements.
+          </p>
+        </div>
+
+        <div class="timeline-devops">
+
+          <div class="timeline-item">
+            <div class="timeline-date">Années 2000</div>
+            <div class="timeline-content">
+              <h3>Méthodes agiles</h3>
+              <p>
+                Les méthodes agiles se développent pour améliorer la collaboration, livrer plus souvent
+                et mieux répondre aux besoins des utilisateurs. Elles préparent l'arrivée du DevOps.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">Agile</span>
+                <span class="tag">Collaboration</span>
+                <span class="tag">Itérations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2009</div>
+            <div class="timeline-content">
+              <h3>Naissance du terme DevOps</h3>
+              <p>
+                Le terme DevOps se popularise pour rapprocher les équipes de développement
+                et d'exploitation. L'objectif est de limiter les blocages entre la création du code
+                et sa mise en production.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">Dev</span>
+                <span class="tag">Ops</span>
+                <span class="tag">Culture</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Années 2010</div>
+            <div class="timeline-content">
+              <h3>CI/CD et automatisation</h3>
+              <p>
+                Les pratiques d'intégration continue et de déploiement continu se développent.
+                Les tests, builds et livraisons sont automatisés grâce à des outils comme Jenkins,
+                GitLab CI ou GitHub Actions.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">CI/CD</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">GitLab CI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Années 2010-2020</div>
+            <div class="timeline-content">
+              <h3>Docker et Kubernetes</h3>
+              <p>
+                La conteneurisation avec Docker facilite le déploiement des applications dans
+                des environnements identiques. Kubernetes permet ensuite d'orchestrer ces conteneurs
+                à grande échelle.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Aujourd'hui</div>
+            <div class="timeline-content">
+              <h3>DevSecOps</h3>
+              <p>
+                La sécurité est de plus en plus intégrée dans les pipelines. Les équipes cherchent
+                à détecter les vulnérabilités plus tôt grâce à des contrôles automatisés,
+                des scans de code et des tests de sécurité.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">Sécurité</span>
+                <span class="tag">DevSecOps</span>
+                <span class="tag">Tests</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">Tendance actuelle</div>
+            <div class="timeline-content">
+              <h3>Automatisation et IA</h3>
+              <p>
+                Les pratiques DevOps évoluent vers plus d'automatisation : supervision,
+                alertes, analyse des logs, aide à la correction d'erreurs et optimisation
+                des pipelines.
+              </p>
+              <div class="veille-pro__tags">
+                <span class="tag">IA</span>
+                <span class="tag">Monitoring</span>
+                <span class="tag">Automatisation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Flux RSS -->
+    <section class="veille-rss">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Articles et ressources DevOps</h2>
+          <p>
+            Pour ma veille technologique sur le DevOps, je consulte des ressources francophones
+            autour de la CI/CD, Kubernetes, GitLab, Docker, de l'observabilité et de
+            l'automatisation des déploiements. Ce flux RSS me permet de centraliser des articles
+            liés aux pratiques DevOps et aux outils utilisés dans ce domaine.
+          </p>
+        </div>
+
+        <!-- Widget RSS Elfsight -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-a0797e42-607f-4686-9114-08b4176a41a5" data-elfsight-app-lazy></div>
+      </div>
+    </section>
+
+    <!-- Outils de veille -->
+    <section class="veille-outils">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Outils que j'utilise pour ma veille</h2>
+        </div>
+
+        <ul class="veille-tools-list">
+          <li>
+            <strong>Flux RSS</strong> — Pour centraliser automatiquement des articles DevOps.
+          </li>
+          <li>
+            <strong>Documentations officielles</strong> — GitLab, Docker, Kubernetes, Jenkins, Salesforce et Copado.
+          </li>
+          <li>
+            <strong>YouTube et tutoriels</strong> — Pour mieux comprendre les pipelines, Docker, Kubernetes et l'automatisation.
+          </li>
+          <li>
+            <strong>Expérience en entreprise</strong> — Pour relier la veille aux déploiements Salesforce avec Copado.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Apport personnel -->
+    <section class="veille-apport">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ce que cette veille m'apporte</h2>
+          <p>
+            Cette veille me permet de mieux comprendre les pratiques utilisées dans les projets
+            informatiques modernes : automatisation, tests, sécurisation des pipelines et amélioration
+            de la qualité des livraisons.
+          </p>
+          <p>
+            Elle complète mon parcours en BTS SIO SLAM et mon expérience en alternance, notamment
+            sur les notions de déploiement, d'environnements, de collaboration entre les équipes
+            et de fiabilisation des mises en production.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+<footer>
+    <div class="container">
+      <div class="grid">
+        <div class="grid__item">
+          <p>Kamelia Nessah</p>
+        </div>
+        <div class="grid__item">
+          <ul class="socials list-unstyled">
+            <!-- LinkedIn -->
+            <li>
+              <a href="https://www.linkedin.com/in/kamelia-nessah" target="_blank">
+                <svg class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="https://github.com/Kamelia-N" target="_blank">
+                <svg class="icon github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <path fill="currentColor"
+                    d="M165.9 397.4c0 2-2.3 3.7-5.2 3.7-3 0-5.2-1.7-5.2-3.7 0-2.1 2.3-3.7 5.2-3.7 2.9-.1 5.2 1.6 5.2 3.7zm-32.5-10.7c-.7 2 1.4 4.1 4.6 4.8 3.1.7 6.2-.4 6.9-2.4.7-2-1.4-4.1-4.6-4.8-3.1-.7-6.2.4-6.9 2.4zM244 8C106.1 8 0 113.3 0 252c0 110.9 71.8 204.9 171.7 238.1 12.5 2.3 17.1-5.4 17.1-12 0-5.9-.2-25.4-.3-46-69.9 15.2-84.7-30-84.7-30-11.4-29-27.8-36.7-27.8-36.7-22.7-15.6 1.7-15.3 1.7-15.3 25.1 1.8 38.3 26 38.3 26 22.3 38.2 58.6 27.2 72.9 20.8 2.3-16.1 8.7-27.2 15.8-33.5-55.8-6.3-114.5-27.9-114.5-124.3 0-27.5 9.8-50 25.8-67.6-2.6-6.3-11.2-31.8 2.4-66.2 0 0 21-6.7 68.8 25.8a236.4 236.4 0 0 1 125.2 0c47.8-32.5 68.8-25.8 68.8-25.8 13.6 34.4 5 59.9 2.4 66.2 16 17.6 25.8 40.1 25.8 67.6 0 96.7-58.8 118-114.8 124.2 8.9 7.7 16.8 22.9 16.8 46.1 0 33.3-.3 60.1-.3 68.3 0 6.6 4.5 14.4 17.2 12C424.2 456.8 496 362.8 496 252 496 113.3 389.9 8 244 8z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="grid__item">
+          <p>Copyright © 2026. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
